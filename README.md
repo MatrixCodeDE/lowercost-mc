@@ -4,7 +4,7 @@ A simple Minecraft Datapack to remove/reset item and book repair costs.
 
 # Usage
 Hold the item/book you want the repair costs to be removed in your main hand and enter `/trigger lowerCost` \
-The item/book should now be on its base level
+If the item has more than 30 levels repair cost, the repair cost will be reset to 20 levels.
 
 # How to install
 <details>
