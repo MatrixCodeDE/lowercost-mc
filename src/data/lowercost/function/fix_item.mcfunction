@@ -1,3 +1,2 @@
-execute as @e[type=chest_minecart,tag=lowercoststore,limit=1,sort=nearest] run data remove entity @e[type=chest_minecart,tag=lowercoststore,limit=1,sort=nearest] Items[{Slot:0b}].tag.RepairCost
-execute as @e[type=chest_minecart,tag=lowercoststore,limit=1,sort=nearest] run data remove entity @e[type=chest_minecart,tag=lowercoststore,limit=1,sort=nearest] Items[{Slot:0b}].components.minecraft:repair_cost
+execute as @e[type=chest_minecart,tag=lowercoststore,limit=1,sort=nearest] run data modify entity @e[type=chest_minecart,tag=lowercoststore,limit=1,sort=nearest] Items[{Slot:0b}].components.minecraft:repair_cost set value 20
 tellraw @s {"text":"[","color":"white","extra":[{"text":"LowerCost","color":"light_purple","bold":true},{"text":"] ","color":"white"},{"text":"Fixed ","color":"green"},{"text":"1","color":"yellow","italic":true},{"text":" item!","color":"green"}]}
